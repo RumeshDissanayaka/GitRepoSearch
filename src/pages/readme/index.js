@@ -62,7 +62,8 @@ const Readme = (props) => {
                   flex: 1,
                   paddingTop: "10%",
                   textAlign: "left",
-                  paddingRight: "5%"
+                  paddingRight: "5%",
+                  borderBottom: '5px solid red'
                 }}
               >
                 <h1>{project}</h1>
@@ -75,7 +76,12 @@ const Readme = (props) => {
                 flexDirection: "row"
               }}
             >
-              <h3>Welcome to {project}'s readme file</h3>
+              <div style={{
+                flex: 1, paddingTop: "2%"
+              }}>
+                <h3>Welcome to {project}'s readme file</h3>
+
+              </div>
             </div>
 
             <div
@@ -84,7 +90,15 @@ const Readme = (props) => {
                 flexDirection: "row"
               }}
             >
-              {loading ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{'Loading data....'}</label> : msg ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{msg}</label> : readme}
+              <div style={{
+                flex: 1, paddingTop: "2%",
+              }}>
+                {loading ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{'Loading data....'}</label> : msg ?
+                  <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>
+                    {msg}
+                  </label> : <label style={{ fontSize: 15, fontWeight: 'bold' }}>{readme}</label>}
+              </div>
+
             </div>
           </div>
         </div>
