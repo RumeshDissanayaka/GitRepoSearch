@@ -48,7 +48,7 @@ const RepoOwner = (props) => {
 
             </div>
             {usersRepo.length > 0 ? usersRepo.map((data, index) =>
-              <RepoCard loading={false} key={index} name={data.full_name} userImage={data.owner.avatar_url} clicked={() => history.push(`/repository/${userName}/${data.name}`)} />
+              <RepoCard loading={false} key={index} name={data.full_name} userImage={data.owner.avatar_url} clicked={() => history.push(`/repo/${userName}/${data.name}`)} />
             ) :
               <Fragment>
                 {[...Array(8)].map((i, index) => {

@@ -22,7 +22,7 @@ const Readme = (props) => {
       if (e.response.status === 404) {
         setErrorMsg('Not found readme file')
       }
-      else{
+      else {
         setErrorMsg('Something went wrong')
 
       }
@@ -84,7 +84,7 @@ const Readme = (props) => {
                 flexDirection: "row"
               }}
             >
-              {loading ? 'Loading data' : msg ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{msg}</label> : readme}
+              {loading ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{'Loading data....'}</label> : msg ? <label style={{ fontSize: 15, fontWeight: 'bold', color: '#FF0000' }}>{msg}</label> : readme}
             </div>
           </div>
         </div>

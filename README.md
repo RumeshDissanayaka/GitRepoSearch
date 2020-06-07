@@ -10,4 +10,4 @@
 2. Search repo name ex: Rumesh or RumeshDissanayaka
 3. Add loaders
 4. Use only Function Components with hooks
-5. Add redux for store git repositories 
+5. Add redux for store git repositories
