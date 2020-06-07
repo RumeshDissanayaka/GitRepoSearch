@@ -6,6 +6,8 @@
     Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 ## Special points
-1. use antd ui framework
-2. search repo name ex: Rumesh or RumeshDissanayaka
+1. Use antd ui framework
+2. Search repo name ex: Rumesh or RumeshDissanayaka
 3. Add loaders
+4. Use only Function Components with hooks
+5. Add redux for store git repositories 
